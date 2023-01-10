@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html class="review-page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./fav-icon.ico">
+  <link rel="icon" href="./source/img/index-icon/fav-ico.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./source/img/index-icon/fav-152.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title> Форма отзыва о посещение Седоны</title>
+</head>
+
+<body class="review-page__body">
+  <header class="page-header review-page__header">
+    <div class="page-header__wrapper">
+      <a class="page-header__logo" href="./index.html"><img src="./source/img/index-logo/logotype-desktop.svg.svg"
+          width="186" height="96" alt="Логотип"></a>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="#">главная</a></li>
+          <li class="main-nav__item"><a href="#">фото и видео</a></li>
+          <li class="main-nav__item"><a href="#">форма отзыва</li></a>
+          <li class="main-nav__item"><a href="#">html academy</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="review-page__main">
+    <h1 class="visually-hidden">Форма отзыва о посещение Седоны</h1>
+    <div class="review-page__wrapper">
+
+      <div class="review-intro">
+        <div class="review-intro__wrapper">
+          <div class="review-intro__logo">
+            <img src="./source/img/review-image/review-logo/review-logo-sedona.svg" alt="#" width="459" height="80">
+          </div>
+          <div class="review-intro__column">
+            <h2 class="review-intro__title">Оставьте свой отзыв</h2>
+            <p class="review-intro__text">Помогите нашим отелям стать лучше! оставьте отзыв о них,
+              а также о посещенных вами достопримечательностях</p>
+          </div>
+        </div>
+      </div>
+      <section class="review-form">
+        <div class="review-form__wrapper">
+          <form class="form" action="#" method="get">
+            <fieldset class="impression">
+              <legend class="impression__title">ваше общее впечатление:</legend>
+              <ul class="impression__list">
+                <li class="impression__item">
+                  <input type="radio" class="impression__radio" id="good" name="radio">
+                  <label class="impression__label" for="good">Скорее положительное</label>
+                </li>
+                <li class="impression__item">
+                  <input type="radio" class="impression__radio" id="bad" name="radio">
+                  <label class="impression__label" for="bad">Скорее отрицательное</label>
+                </li>
+                <li class="impression__item">
+                  <input type="radio" class="impression__radio" id="dont" name="radio">
+                  <label class="impression__label" for="dont">Затрудняюсь ответить</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldse class="personality">
+              <legend class="personality__title">Представьтесь:</legend>
+              <ul class="personality__list">
+                <li class="personality__item">
+                  <label class="personality__label" for="name">имя*:</label>
+                  <input class="personality__input" type="text" id="name" name="personality">
+                </li>
+                <li class="personality__item">
+                  <label class="personality__label" for="family-name">фамилия*:</label>
+                  <input class="personality__input" type="text" id="family-name" name="personality">
+                </li>
+                <li class="personality__item">
+                  <label class="personality__label" for="surname">отчество*:</label>
+                  <input class="personality__input" type="text" id="surname" name="personality">
+                </li>
+              </ul>
+              </fieldset>
+          </form>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+
+</html>
