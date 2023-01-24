@@ -13,15 +13,22 @@
   }
 
   .main-nav {
-    max-width: 1038px;
-    margin: 0px auto;
     padding: 16px 0 14px 0;
+
     // .main-nav__list
 
     &__list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+    &__item:first-child {
+      margin: 0 0 0 92px;
+    }
+    &__item:last-child {
+      margin: 0 72px 0 0;
+    }
+    &__item-right {
+      justify-self: right;
     }
 
     // .main-nav__item
@@ -29,6 +36,8 @@
     &__item {
       font-weight: 700;
     }
+
+    // .main-nav__item-left
 
     &__item a {
       color: $basic-black;
