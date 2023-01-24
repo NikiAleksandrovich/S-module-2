@@ -1,0 +1,47 @@
+.page-header {
+  // .page-header__wrapper
+
+  &__wrapper {
+    position: relative;
+  }
+
+  // .page-header__logo
+
+  &__logo {
+    position: absolute;
+    left: 42%;
+  }
+
+  .main-nav {
+    max-width: 1038px;
+    margin: 0px auto;
+    padding: 16px 0 14px 0;
+    // .main-nav__list
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    // .main-nav__item
+
+    &__item {
+      font-weight: 700;
+    }
+
+    &__item a {
+      color: $basic-black;
+    }
+    &__item a:focus {
+      color: #604e43;
+    }
+    &__item a:hover {
+      color: $basic-light-blue;
+    }
+    &__item a:active {
+      color: #766357;
+      opacity: 0.3;
+    }
+  }
+}

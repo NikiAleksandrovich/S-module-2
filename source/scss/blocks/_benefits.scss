@@ -1,0 +1,35 @@
+.benefits {
+  // .benefits__wrapper
+
+  &__wrapper {
+    display: flex;
+    padding: 44px 0 55px 0;
+    background-color: $basic-very-light-gray;
+  }
+
+  // .benefits__column
+
+  &__column {
+    flex: 1 1 0.33333%;
+    text-align: center;
+  }
+
+  // .benefits__title
+
+  &__title {
+    font-size: 21px;
+    font-weight: 700;
+    margin: 0 0 11px 0;
+  }
+
+  // .benefits__number
+
+  &__number {
+    margin: 0 0 16px 0;
+  }
+
+  // .benefits__text
+
+  &__text {
+  }
+}

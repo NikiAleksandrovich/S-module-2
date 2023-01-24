@@ -1,0 +1,20 @@
+.intro-preview {
+  // .intro-preview__column
+
+  &__column {
+    text-align: center;
+    padding: 55px 0 41px 0;
+  }
+
+  // .intro-preview__title
+
+  &__title {
+    margin: 0 0 31px 0;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    // .intro-preview__text
+  }
+  &__text {
+  }
+}

@@ -1,0 +1,15 @@
+.intro {
+  // .intro__wrapper
+
+  &__wrapper {
+    padding: 78px 0 92px 0;
+    background: url(/source/img/index-background/intro-triangle.svg.svg) no-repeat bottom,
+      url(/source/img/index-background/back-desktop.jpg.jpg) no-repeat;
+  }
+
+  // .intro__logo
+
+  &__logo {
+    text-align: center;
+  }
+}
