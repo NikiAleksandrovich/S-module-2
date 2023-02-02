@@ -1,7 +1,7 @@
 //Global
 @import "./global/variables";
 @import "./global/global";
-//Blocks
+//Blocks Index
 @import "./blocks/page-header";
 @import "./blocks/intro";
 @import "./blocks/intro-preview";
@@ -10,3 +10,9 @@
 @import "./blocks/benefits";
 @import "./blocks/serch-hotel";
 @import "./blocks/footer";
+//Blocks Review
+@import "./blocks/comon-intro";
+@import "./blocks/review-impression-personality";
+@import "./blocks/review-contact";
+@import "./blocks/review-sights";
+@import "./blocks/review-feedback";

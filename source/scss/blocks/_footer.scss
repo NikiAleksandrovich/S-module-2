@@ -41,17 +41,23 @@
     align-items: center;
     width: 46px;
     height: 48px;
+    cursor: pointer;
     background-color: $basic-light-blue;
+  }
+  &__icon:hover {
+    background-color: #669ec0;
+  }
+  &__icon:active {
+    background-color: #5496bd;
+  }
+  &__icon:active svg path {
+    fill-opacity: 0.3;
   }
   &__icon svg {
     fill: $basic-white;
   }
-
-  // .footer__icon--svg
-
-  &__icon--svg {
-  }
 }
+
 .developer {
   // .developer__logo
 

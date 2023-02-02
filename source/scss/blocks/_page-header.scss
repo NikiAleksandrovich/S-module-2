@@ -2,7 +2,6 @@
   // .page-header__wrapper
 
   &__wrapper {
-    position: relative;
   }
 
   // .page-header__logo
@@ -10,34 +9,31 @@
   &__logo {
     position: absolute;
     left: 42%;
+    top: 0;
   }
 
   .main-nav {
     padding: 16px 0 14px 0;
+    position: relative;
 
     // .main-nav__list
 
     &__list {
+      max-width: 1040px;
+      margin: 0px auto;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-    }
-    &__item:first-child {
-      margin: 0 0 0 92px;
-    }
-    &__item:last-child {
-      margin: 0 72px 0 0;
-    }
-    &__item-right {
-      justify-self: right;
     }
 
     // .main-nav__item
 
     &__item {
+      max-width: 240px;
       font-weight: 700;
     }
-
-    // .main-nav__item-left
+    &__item-right {
+      justify-self: right;
+    }
 
     &__item a {
       color: $basic-black;

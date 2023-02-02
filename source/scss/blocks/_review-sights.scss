@@ -1,0 +1,88 @@
+.sights {
+  padding: 0 0 82px 0;
+  // .sights__title
+
+  &__title {
+    text-align: center;
+    font-size: 21px;
+    font-weight: 700;
+    color: $basic-black;
+    position: relative;
+    margin: 0 0 61px 0;
+  }
+  &__title::before {
+    content: "";
+    width: 280px;
+    height: 1px;
+    left: -339px;
+    bottom: 25px;
+    background-color: #dbdbdb;
+    position: absolute;
+  }
+  &__title::after {
+    content: "";
+    width: 280px;
+    height: 1px;
+    left: 339px;
+    bottom: 25px;
+    background-color: #dbdbdb;
+    position: absolute;
+  }
+
+  // .sights__list
+
+  &__list {
+    padding: 0 0 0 63px;
+    gap: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  // .sights__item
+
+  &__item {
+  }
+
+  // .sights__checkbox
+
+  // .sights__label
+
+  &__label {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: none;
+    position: relative;
+  }
+  &__checkbox-icon::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    top: -21px;
+    left: -69px;
+    background-color: $basic-extra-light-gray;
+    cursor: pointer;
+  }
+  &__checkbox:checked + &__label::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 23px;
+    height: 16px;
+    left: -53px;
+    top: -1px;
+    background: url(/source/img/review-image/review-ico/tick.svg) no-repeat;
+    cursor: pointer;
+  }
+  &__checkbox-icon:hover::before {
+    background-color: #e5e5e5;
+  }
+  &__checkbox-icon:active::before {
+    background-color: #d5d5d5;
+  }
+  &__label:active::after {
+    opacity: 0.3;
+  }
+}

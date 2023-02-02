@@ -1,0 +1,137 @@
+.questionnaire-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0px 0 69px 78px;
+}
+.questionnaire {
+  flex: 1 1 auto;
+  position: relative;
+  &::after {
+    content: "";
+    width: 1px;
+    height: 292px;
+    top: -26px;
+    right: 43px;
+    position: absolute;
+    background-color: #dbdbdb;
+  }
+  // .questionnaire__title
+
+  &__title {
+    flex: 1 1 auto;
+    font-size: 21px;
+    font-weight: 700;
+  }
+
+  // .questionnaire__list
+
+  &__list {
+    margin: 73px 0 0 0;
+  }
+
+  // .questionnaire__item
+
+  &__item {
+    margin: 0 0 51px 0;
+    position: relative;
+  }
+  &__item:last-child {
+    margin: 0;
+  }
+
+  // .questionnaire__radio
+
+  &__radio {
+  }
+
+  // .questionnaire__label
+
+  &__label {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: none;
+  }
+  &__label:first-letter {
+    text-transform: uppercase;
+  }
+
+  &__radio-button {
+    width: 55px;
+    height: 55px;
+    top: -16px;
+    left: -76px;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+    position: absolute;
+    cursor: pointer;
+  }
+  &__radio-button:hover {
+    background-color: $basic-very-meium-light-gray;
+  }
+  &__radio-button:active {
+    background-color: #d5d5d5;
+  }
+  &__radio:checked + &__label::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    top: 1px;
+    left: -58px;
+    border-radius: 50%;
+    background-color: $basic-black;
+    position: absolute;
+    cursor: pointer;
+  }
+  &__radio:checked + &__label:active::after {
+    background-color: #333333;
+    opacity: 0.3;
+  }
+}
+.personality {
+  padding: 0 0 0 36px;
+  // .personality__list
+
+  &__list {
+    display: grid;
+    max-width: 400px;
+    margin: 57px 0 0 0;
+  }
+
+  // .personality__item
+
+  &__item {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 0 20px 0;
+  }
+  &__item:last-child {
+    margin: 0;
+  }
+
+  // .personality__label
+
+  &__label {
+  }
+
+  // .personality__input
+
+  &__input {
+    width: 100%;
+    padding: 18px 0 14px 22px;
+    margin: 0 0 0 15px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    color: $basic-black;
+    cursor: pointer;
+  }
+  &__input:hover {
+    background-color: $basic-very-meium-light-gray;
+  }
+  &__input:focus {
+    background-color: $basic-white;
+    outline: 4px solid #e5e5e5;
+  }
+}

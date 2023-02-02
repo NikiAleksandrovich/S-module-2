@@ -40,13 +40,15 @@
   &__button:hover {
     background-color: $basic-light-cyan-blue;
   }
+
   &__button:active {
     border-color: $-basic-medium-cyan-blue;
   }
-  &__button p:active {
+  &__button:active p {
     opacity: 0.3;
   }
   &__button:disabled {
+    background-color: #e5e5e5;
     opacity: 0.3;
   }
 }
