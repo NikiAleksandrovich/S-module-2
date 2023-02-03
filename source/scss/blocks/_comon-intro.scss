@@ -5,7 +5,7 @@
     padding: 100px 0 120px 0;
     text-align: center;
     background: url(/source/img/review-image/review-background/intro-triangle.svg.svg) bottom no-repeat,
-      url(/source/img/review-image/review-background/back-desktop.jpg) no-repeat;
+      url(/source/img/review-image/review-background/back-desktop.jpg) 0 -54px no-repeat;
   }
 
   // .common-intro__logo
@@ -19,6 +19,9 @@
   &__column {
     padding: 113px 0 55px 0;
     text-align: center;
+  }
+  &__column--catalog {
+    padding: 104px 0 55px 0;
   }
 
   // .common-intro__title

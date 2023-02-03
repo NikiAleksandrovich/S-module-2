@@ -412,11 +412,14 @@ img {
 .common-intro__wrapper {
   padding: 100px 0 120px 0;
   text-align: center;
-  background: url(/source/img/review-image/review-background/intro-triangle.svg.svg) bottom no-repeat, url(/source/img/review-image/review-background/back-desktop.jpg) no-repeat;
+  background: url(/source/img/review-image/review-background/intro-triangle.svg.svg) bottom no-repeat, url(/source/img/review-image/review-background/back-desktop.jpg) 0 -54px no-repeat;
 }
 .common-intro__column {
   padding: 113px 0 55px 0;
   text-align: center;
+}
+.common-intro__column--catalog {
+  padding: 104px 0 55px 0;
 }
 .common-intro__title {
   font-size: 30px;
@@ -793,4 +796,71 @@ img {
 }
 .review-form__text {
   font-size: 14px;
+}
+
+.gallery__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 21px 0 0 0;
+}
+.gallery__item {
+  position: relative;
+}
+.gallery-info {
+  width: 100%;
+  position: absolute;
+  bottom: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.3);
+  align-items: center;
+}
+.gallery-info__revue {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 16px 0 15px 21px;
+}
+.gallery-info__text {
+  font-weight: 400;
+  text-transform: none;
+}
+.gallery-info__icon {
+  cursor: pointer;
+}
+.gallery-info__label {
+  margin: 0 4px 0 0;
+}
+.gallery-info__input {
+  width: 53px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  background-color: transparent;
+}
+.gallery-info__input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+.gallery-info__input::-moz-placeholder {
+  color: #ffffff;
+}
+.gallery-info__input:-ms-input-placeholder {
+  color: #ffffff;
+}
+.gallery-info__input::-ms-input-placeholder {
+  color: #ffffff;
+}
+.gallery-info__input::placeholder {
+  color: #ffffff;
 }/*# sourceMappingURL=style.css.map */

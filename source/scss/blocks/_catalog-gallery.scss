@@ -1,0 +1,75 @@
+.gallery {
+  // .gallery__wrapper
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 21px 0 0 0;
+  }
+
+  // .gallery__item
+
+  &__item {
+    position: relative;
+  }
+
+  // .gallery__item-big
+
+  &__item-big {
+  }
+}
+.gallery-info {
+  width: 100%;
+  position: absolute;
+  bottom: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.3);
+  align-items: center;
+
+  // .gallery-info__title
+  &__revue {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: $basic-white;
+    padding: 16px 0 15px 21px;
+  }
+  &__title {
+  }
+
+  // .gallery-info__text
+
+  &__text {
+    font-weight: 400;
+    text-transform: none;
+  }
+
+  // .gallery-info__like
+
+  &__like {
+  }
+
+  // .gallery-info__icon
+
+  &__icon {
+    cursor: pointer;
+  }
+
+  // .gallery-info__input
+
+  &__label {
+    margin: 0 4px 0 0;
+  }
+  &__input {
+    width: 53px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    background-color: transparent;
+  }
+  &__input::placeholder {
+    color: $basic-white;
+  }
+}
