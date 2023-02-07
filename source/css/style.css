@@ -32,7 +32,6 @@ aside {
 
 html,
 body {
-  height: 100%;
   line-height: 1;
   font-size: 14px;
   -ms-text-size-adjust: 100%;
@@ -106,22 +105,18 @@ img {
   overflow: hidden;
 }
 
-.page {
-  background-color: #f2f2f2;
-}
-
 .page__body {
-  max-width: 1200px;
+  max-width: 1280px;
+  padding: 0 40px;
   margin: 0px auto;
   font-family: "PT Sans", sans-serif;
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
 }
 
 .page__wrapper {
-  min-height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -133,7 +128,8 @@ img {
 }
 
 .review-form__wrapper {
-  max-width: 960px;
+  max-width: 1200px;
+  padding: 0 120px;
   margin: 0px auto;
 }
 
@@ -143,14 +139,19 @@ img {
           flex: 1 1 auto;
 }
 
+.page-header__wrapper {
+  max-width: 1060px;
+  margin: 0px auto;
+  padding: 16px 10px 14px 10px;
+  position: relative;
+}
 .page-header__logo {
   position: absolute;
-  left: 43%;
-  top: 0;
-}
-.page-header .main-nav {
-  padding: 16px 0 14px 0;
-  position: relative;
+  left: 50%;
+  top: 86%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .page-header .main-nav__list {
   max-width: 1040px;
@@ -179,6 +180,11 @@ img {
   opacity: 0.3;
 }
 
+@media (max-width: 768px) {
+  .page__wrapper {
+    max-width: none;
+  }
+}
 .intro__wrapper {
   padding: 78px 0 92px 0;
   background: url(/source/img/index-background/intro-triangle.svg.svg) no-repeat bottom, url(/source/img/index-background/back-desktop.jpg.jpg) no-repeat;
@@ -322,6 +328,10 @@ img {
 .serch-hotel__button:disabled {
   background-color: #e5e5e5;
   opacity: 0.3;
+}
+
+.map iframe {
+  width: 100%;
 }
 
 .footer__wrapper {
@@ -871,7 +881,7 @@ img {
 }
 
 .video-info {
-  padding: 0 370px 83px 370px;
+  padding: 0 0 83px 0;
 }
 .video-info__title {
   font-size: 30px;
@@ -898,6 +908,13 @@ img {
 }
 .video-preview__controls svg {
   fill: #ffffff;
+  cursor: pointer;
+}
+.video-preview__controls svg:hover {
+  fill: rgba(255, 255, 255, 0.6);
+}
+.video-preview__controls svg:active {
+  fill: rgba(255, 255, 255, 0.3);
 }
 .video-preview__button {
   width: 83px;
@@ -913,6 +930,7 @@ img {
   width: 540px;
   height: 3px;
   background-color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
 }
 .video-preview__togle {
   margin: -6px 0 0 113px;
@@ -920,4 +938,5 @@ img {
   height: 9px;
   border-radius: 50%;
   background-color: #ffffff;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

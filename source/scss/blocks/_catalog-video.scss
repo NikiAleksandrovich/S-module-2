@@ -7,7 +7,7 @@
   }
 }
 .video-info {
-  padding: 0 370px 83px 370px;
+  padding: 0 0 83px 0;
   // .video-info__title
 
   &__title {
@@ -44,6 +44,13 @@
   }
   &__controls svg {
     fill: $basic-white;
+    cursor: pointer;
+  }
+  &__controls svg:hover {
+    fill: rgba(255, 255, 255, 0.6);
+  }
+  &__controls svg:active {
+    fill: rgba(255, 255, 255, 0.3);
   }
 
   // .video-preview__button
@@ -71,6 +78,7 @@
     width: 540px;
     height: 3px;
     background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
   }
 
   // .video-preview__togle
@@ -81,6 +89,7 @@
     height: 9px;
     border-radius: 50%;
     background-color: $basic-white;
+    cursor: pointer;
   }
 
   // .video-preview__cc

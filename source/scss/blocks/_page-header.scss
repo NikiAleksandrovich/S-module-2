@@ -2,20 +2,22 @@
   // .page-header__wrapper
 
   &__wrapper {
+    max-width: 1060px;
+    margin: 0px auto;
+    padding: 16px 10px 14px 10px;
+    position: relative;
   }
 
   // .page-header__logo
 
   &__logo {
     position: absolute;
-    left: 43%;
-    top: 0;
+    left: 50%;
+    top: 86%;
+    transform: translate(-50%, -50%);
   }
 
   .main-nav {
-    padding: 16px 0 14px 0;
-    position: relative;
-
     // .main-nav__list
 
     &__list {
@@ -47,6 +49,15 @@
     &__item a:active {
       color: #766357;
       opacity: 0.3;
+    }
+  }
+}
+@media (max-width: $breakpoint-tablet) {
+  .page {
+    // .page__wrapper
+
+    &__wrapper {
+      max-width: none;
     }
   }
 }

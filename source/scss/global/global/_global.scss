@@ -29,7 +29,6 @@ aside {
 
 html,
 body {
-  height: 100%;
   line-height: 1;
   font-size: 14px;
   -ms-text-size-adjust: 100%;
@@ -92,20 +91,18 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.page {
-  background-color: $basic-extra-light-gray;
-}
+
 .page__body {
-  max-width: 1200px;
+  max-width: 1280px;
+  padding: 0 40px;
   margin: 0px auto;
   font-family: "PT Sans", sans-serif;
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
-  background-color: $basic-white;
+  background-color: $basic-extra-light-gray;
 }
 .page__wrapper {
-  min-height: 100%;
   display: flex;
   flex-direction: column;
   background-color: $basic-white;
@@ -114,7 +111,8 @@ img {
   // .review-form__wrapper
 
   &__wrapper {
-    max-width: 960px;
+    max-width: 1200px;
+    padding: 0 120px;
     margin: 0px auto;
   }
 }

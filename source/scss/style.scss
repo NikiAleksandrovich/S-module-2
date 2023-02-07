@@ -1,6 +1,7 @@
 //Global
-@import "./global/variables";
-@import "./global/global";
+@import "./global/global/variables";
+@import "./global/global/global";
+@import "./global/global/break-points";
 //Blocks Index
 @import "./blocks/page-header";
 @import "./blocks/intro";
