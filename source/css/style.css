@@ -88,7 +88,7 @@ h6 {
 /*--------------------*/
 img {
   max-width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .visually-hidden {
@@ -140,24 +140,36 @@ img {
 }
 
 .page-header__wrapper {
-  max-width: 1060px;
-  margin: 0px auto;
-  padding: 16px 10px 14px 10px;
+  padding: 0 71px 14px 90px;
   position: relative;
 }
 .page-header__logo {
-  position: absolute;
-  left: 50%;
-  top: 86%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+.page-header .main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .page-header .main-nav__list {
-  max-width: 1040px;
-  margin: 0px auto;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 16px 0 0 0;
+}
+.page-header .main-nav__list--left {
+  width: 316px;
+}
+.page-header .main-nav__list--right {
+  width: 341px;
 }
 .page-header .main-nav__item {
   max-width: 240px;
