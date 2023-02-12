@@ -5,6 +5,9 @@
     display: flex;
     align-items: center;
     padding: 35px 0 37px 0;
+    @media (max-width: 992px) {
+      padding: 35px 37px 37px 25px;
+    }
   }
 
   // .footer__row
@@ -35,9 +38,10 @@
     display: flex;
     justify-content: space-between;
     @media (max-width: 992px) {
-      margin: 0 80px 0 80px;
+      margin: 0px 67px 0 77px;
     }
   }
+
   &__icon {
     display: flex;
     justify-content: center;

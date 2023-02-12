@@ -15,11 +15,20 @@
     text-align: center;
     color: $basic-white;
     background-color: $basic-medium-light-blue;
+    @media (max-width: 992px) {
+      padding: 40px 0 65px 0;
+    }
   }
   &__column-brige {
     padding: 52px 95px 44px 91px;
+    @media (max-width: 992px) {
+      padding: 40px 0 65px 0;
+      br {
+        display: inline;
+      }
+    }
   }
-  &__c-brige {
+  &__column-brige {
     flex-direction: row-reverse;
   }
 
@@ -42,6 +51,11 @@
 
   &__text {
     line-height: 21px;
+    @media (max-width: 992px) {
+      br {
+        display: none;
+      }
+    }
   }
 
   // .feature__img

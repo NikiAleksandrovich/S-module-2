@@ -13,6 +13,9 @@
     flex: 1 1 0.33333333%;
     padding: 59px 73px 74px 73px;
     text-align: center;
+    @media (max-width: 992px) {
+      padding: 59px 31px 58px 36px;
+    }
   }
 
   // .service__svg
@@ -50,5 +53,11 @@
   // .service__text
 
   &__text {
+    @media (max-width: 992px) {
+      br {
+        display: none;
+      }
+      line-height: 23px;
+    }
   }
 }

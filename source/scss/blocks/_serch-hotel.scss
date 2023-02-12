@@ -4,6 +4,9 @@
   &__wrapper {
     padding: 58px 0 67px 0;
     text-align: center;
+    @media (max-width: 992px) {
+      padding: 58px 0 59px 0;
+    }
   }
 
   // .serch-hotel__column
@@ -36,6 +39,9 @@
     text-transform: uppercase;
     color: $basic-white;
     background-color: $basic-light-blue;
+    @media (max-width: 992px) {
+      margin: 37px 0 0 0;
+    }
   }
   &__button:hover {
     background-color: $basic-light-cyan-blue;

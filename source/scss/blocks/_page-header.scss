@@ -36,9 +36,15 @@
     }
     &__list--left {
       width: 316px;
+      @media (max-width: 992px) {
+        margin: 0 114px 0 0;
+      }
     }
     &__list--right {
       width: 346px;
+      @media (max-width: 992px) {
+        margin: 0 0 0 100px;
+      }
     }
 
     &__item a {
@@ -63,7 +69,7 @@
 }
 @media (max-width: 992px) {
   .page__body {
-    max-width: 750px;
+    max-width: 768px;
     padding: 0;
   }
 }
@@ -72,7 +78,6 @@
     max-width: none;
     padding: 0;
     br {
-      display: none;
     }
   }
 }
