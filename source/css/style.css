@@ -139,14 +139,23 @@ img {
           flex: 1 1 auto;
 }
 
-.page-header__wrapper {
-  padding: 0 71px 14px 90px;
+.page-header {
   position: relative;
 }
-.page-header__logo {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+.page-header__wrapper {
+  padding: 14px 71px 16px 90px;
+}
+@media (max-width: 1200px) {
+  .page-header__wrapper {
+    padding: 14px 30px 16px 30px;
+  }
+}
+.page-header__logo--wrapper {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  text-align: center;
 }
 .page-header .main-nav {
   display: -webkit-box;
@@ -157,26 +166,21 @@ img {
           justify-content: space-between;
 }
 .page-header .main-nav__list {
+  position: relative;
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 16px 0 0 0;
+  font-weight: 700;
 }
 .page-header .main-nav__list--left {
   width: 316px;
 }
 .page-header .main-nav__list--right {
-  width: 341px;
-}
-.page-header .main-nav__item {
-  max-width: 240px;
-  font-weight: 700;
-}
-.page-header .main-nav__item-right {
-  justify-self: right;
+  width: 346px;
 }
 .page-header .main-nav__item a {
   color: #000000;
@@ -192,14 +196,29 @@ img {
   opacity: 0.3;
 }
 
-@media (max-width: 768px) {
-  .page__wrapper {
+@media (max-width: 1200px) {
+  .page__body {
+    max-width: 1120px;
+  }
+}
+@media (max-width: 992px) {
+  .page__body {
+    max-width: 750px;
+    padding: 0;
+  }
+}
+@media (max-width: 767px) {
+  .page__body {
     max-width: none;
+    padding: 0;
+  }
+  .page__body br {
+    display: none;
   }
 }
 .intro__wrapper {
   padding: 78px 0 92px 0;
-  background: url(/source/img/index-background/intro-triangle.svg.svg) no-repeat bottom, url(/source/img/index-background/back-desktop.jpg.jpg) no-repeat;
+  background: url(/source/img/index-background/intro-triangle.svg.svg) no-repeat bottom, url(/source/img/index-background/back-desktop.jpg.jpg) 50% 0 no-repeat;
 }
 .intro__logo {
   text-align: center;
@@ -434,7 +453,7 @@ img {
 .common-intro__wrapper {
   padding: 100px 0 120px 0;
   text-align: center;
-  background: url(/source/img/review-image/review-background/intro-triangle.svg.svg) bottom no-repeat, url(/source/img/review-image/review-background/back-desktop.jpg) 0 -54px no-repeat;
+  background: url(/source/img/review-image/review-background/intro-triangle.svg.svg) bottom no-repeat, url(/source/img/review-image/review-background/back-desktop.jpg) 50% -54px no-repeat;
 }
 .common-intro__column {
   padding: 113px 0 55px 0;
