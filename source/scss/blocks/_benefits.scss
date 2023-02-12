@@ -5,6 +5,11 @@
     display: flex;
     padding: 44px 0 55px 0;
     background-color: $basic-very-light-gray;
+    @media (max-width: 767px) {
+      display: grid;
+      grid-template-rows: 1fr;
+      row-gap: 50px;
+    }
   }
 
   // .benefits__column
@@ -12,6 +17,9 @@
   &__column {
     flex: 1 1 0.33333%;
     text-align: center;
+    @media (max-width: 992px) {
+      padding: 0 40px 0 40px;
+    }
   }
 
   // .benefits__title
