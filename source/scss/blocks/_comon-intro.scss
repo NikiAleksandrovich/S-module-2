@@ -6,6 +6,9 @@
     text-align: center;
     background: url(/source/img/review-image/review-background/intro-triangle.svg.svg) bottom no-repeat,
       url(/source/img/review-image/review-background/back-desktop.jpg) 50% -54px no-repeat;
+    @media (max-width: 992px) {
+      padding: 95px 0 120px 0;
+    }
   }
 
   // .common-intro__logo
@@ -19,6 +22,9 @@
   &__column {
     padding: 113px 0 55px 0;
     text-align: center;
+    @media (max-width: 992px) {
+      padding: 57px 0 55px 0;
+    }
   }
   &__column--catalog {
     padding: 104px 0 55px 0;
@@ -35,6 +41,5 @@
   // .common-intro__text
 
   &__text {
-    padding: 0 380px;
   }
 }

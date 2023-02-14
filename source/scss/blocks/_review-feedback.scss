@@ -18,6 +18,11 @@
     bottom: 16px;
     background-color: #dbdbdb;
     position: absolute;
+    @media (max-width: 1040px) {
+      width: 123px;
+      left: -184px;
+      bottom: 15px;
+    }
   }
   &__title::after {
     content: "";
@@ -27,6 +32,10 @@
     bottom: 17px;
     background-color: #dbdbdb;
     position: absolute;
+    @media (max-width: 1040px) {
+      width: 123px;
+      bottom: 15px;
+    }
   }
   // .feedback__text
 
@@ -58,6 +67,9 @@
     padding: 0 0 66px 0;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 992px) {
+      padding: 0 0 61px 0;
+    }
   }
 
   // .review-form__button
@@ -70,6 +82,9 @@
     text-transform: uppercase;
     color: $basic-white;
     background-color: #81b3d2;
+    @media (max-width: 992px) {
+      padding: 19px 77px 14px 66px;
+    }
   }
 
   // .review-form__text

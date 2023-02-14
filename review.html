@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <link rel="stylesheet" href="./source/css/style.css">
   <link rel="icon" href="./fav-icon.ico">
   <link rel="icon" href="./source/img/index-icon/fav-ico.svg" type="image/svg+xml">
@@ -48,7 +48,7 @@
         </div>
         <div class="common-intro__column">
           <h2 class="common-intro__title">Оставьте свой отзыв</h2>
-          <p class="common-intro__text">Помогите нашим отелям стать лучше! оставьте отзыв о них,
+          <p class="common-intro__text">Помогите нашим отелям стать лучше! оставьте отзыв о них,<br>
             а также о посещенных вами достопримечательностях</p>
         </div>
 
@@ -106,8 +106,9 @@
               <fieldset class="contact-info">
                 <legend class="contact-info__title">Контактная информация:</legend>
                 <div class="contact-info__list">
-                  <div class="contact-info__item">
-                    <label class="contact-info__label contact-info__label--tel" for="contact-tel">Телефон*:</label>
+                  <div class="contact-info__item contact-info__item--tel">
+                    <label class="contact-info__label contact-info__label--tel" for="contact-tel"><span
+                        class="contact-info__span">Контактный</span> Телефон*:</label>
                     <input class="contact-info__input" type="tel" id="contact-tel" placeholder="Введите телефон"
                       name="contacts" required>
                   </div>

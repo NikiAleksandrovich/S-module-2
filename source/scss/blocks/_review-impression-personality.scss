@@ -1,7 +1,23 @@
+.review-form {
+  // .review-form__wrapper
+
+  &__wrapper {
+    max-width: 1200px;
+    padding: 0 120px;
+    margin: 0px auto;
+
+    @media (max-width: 1200px) {
+      padding: 0 60px;
+    }
+  }
+}
 .questionnaire-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 0px 0 69px 78px;
+  @media (max-width: 992px) {
+    padding: 28px 0 69px 0;
+  }
 }
 .questionnaire {
   flex: 1 1 auto;
@@ -14,6 +30,9 @@
     right: 43px;
     position: absolute;
     background-color: #dbdbdb;
+    @media (max-width: 992px) {
+      right: 0px;
+    }
   }
   // .questionnaire__title
 
@@ -27,6 +46,9 @@
 
   &__list {
     margin: 73px 0 0 0;
+    @media (max-width: 992px) {
+      padding: 0px 0 0 71px;
+    }
   }
 
   // .questionnaire__item
@@ -89,6 +111,9 @@
 }
 .personality {
   padding: 0 0 0 36px;
+  @media (max-width: 992px) {
+    padding: 0 0 0 55px;
+  }
   // .personality__list
 
   &__list {

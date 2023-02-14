@@ -18,6 +18,11 @@
     bottom: 25px;
     background-color: #dbdbdb;
     position: absolute;
+    @media (max-width: 1040px) {
+      width: 123px;
+      left: -184px;
+      bottom: 25px;
+    }
   }
   &__title::after {
     content: "";
@@ -27,6 +32,10 @@
     bottom: 25px;
     background-color: #dbdbdb;
     position: absolute;
+    @media (max-width: 1040px) {
+      width: 123px;
+      bottom: 25px;
+    }
   }
 
   // .sights__list
@@ -37,6 +46,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media (max-width: 992px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 62px;
+      padding: 0 0 0 162px;
+    }
   }
 
   // .sights__item
