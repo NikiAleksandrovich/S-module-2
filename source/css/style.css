@@ -1058,6 +1058,12 @@ img {
   font-size: 14px;
 }
 
+@media (max-width: 992px) {
+  .catalog-page__wrapper {
+    padding: 0px 60px;
+  }
+}
+
 .gallery__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
