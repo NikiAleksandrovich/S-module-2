@@ -12,19 +12,35 @@
     display: flex;
     flex-wrap: wrap;
     padding: 21px 0 0 0;
+    @media (max-width: 992px) {
+      padding: 23px 0 6px 0px;
+    }
   }
 
   // .gallery__item
 
   &__item {
     position: relative;
+
+    @media (max-width: 992px) {
+      width: 324px;
+    }
+  }
+  &__item:nth-child(3) .gallery-info {
+    @media (max-width: 992px) {
+      background-color: #eaeaea;
+    }
+  }
+
+  &__item-big {
+    @media (max-width: 992px) {
+      width: 1200px;
+    }
   }
 
   // .gallery__item-big
-
-  &__item-big {
-  }
 }
+
 .gallery-info {
   width: 100%;
   position: absolute;
@@ -34,6 +50,11 @@
   justify-content: space-between;
   background-color: rgba(0, 0, 0, 0.3);
   align-items: center;
+  @media (max-width: 992px) {
+    position: relative;
+    bottom: 0;
+    background-color: $basic-extra-light-gray;
+  }
 
   // .gallery-info__title
   &__revue {
@@ -42,6 +63,9 @@
     font-weight: 700;
     color: $basic-white;
     padding: 16px 0 15px 21px;
+    @media (max-width: 992px) {
+      color: $basic-black;
+    }
   }
   &__title {
   }
@@ -60,8 +84,14 @@
 
   // .gallery-info__icon
 
-  &__icon {
+  &__icon svg {
     cursor: pointer;
+    fill: $basic-white;
+  }
+  &__icon svg {
+    @media (max-width: 992px) {
+      fill: rgba(0, 0, 0, 0.3);
+    }
   }
 
   // .gallery-info__input
@@ -78,5 +108,8 @@
   }
   &__input::placeholder {
     color: $basic-white;
+    @media (max-width: 992px) {
+      color: $basic-black;
+    }
   }
 }

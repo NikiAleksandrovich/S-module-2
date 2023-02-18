@@ -28,6 +28,9 @@
   }
   &__column--catalog {
     padding: 104px 0 55px 0;
+    @media (max-width: 992px) {
+      padding: 54px 0 55px 0;
+    }
   }
 
   // .common-intro__title

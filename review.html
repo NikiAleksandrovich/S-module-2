@@ -21,8 +21,13 @@
       <div class="page-header__wrapper">
         <nav class="main-nav">
           <div class="page-header__logo--wrapper">
-            <a href="#" class="page-header__logo"><img src="./source/img/index-logo/logotype-desktop.svg.svg"
-                width="186" height="96" alt="Логотип"></a>
+            <a href="#" class="page-header__logo">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./source/img/index-logo/logotype-desktop.svg.svg">
+                <source media="(min-width: 768px)" srcset="./source/img/index-logo/mainlogo-tablet.svg">
+                <img src="./source/img/index-logo/logotyle-mobile.svg" alt="Логотип">
+              </picture>
+            </a>
           </div>
           <ul class="main-nav__list main-nav__list--left">
             <li class="main-nav__item"><a href="./index.html">главная</a></li>
@@ -108,7 +113,8 @@
                 <div class="contact-info__list">
                   <div class="contact-info__item contact-info__item--tel">
                     <label class="contact-info__label contact-info__label--tel" for="contact-tel"><span
-                        class="contact-info__span">Контактный</span> Телефон*:</label>
+                        class="contact-info__span">Контактный</span>
+                      Телефон*:</label>
                     <input class="contact-info__input" type="tel" id="contact-tel" placeholder="Введите телефон"
                       name="contacts" required>
                   </div>
