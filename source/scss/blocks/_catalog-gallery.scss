@@ -9,10 +9,12 @@
   // .gallery__wrapper
 
   &__wrapper {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+
     padding: 21px 0 0 0;
     @media (max-width: 992px) {
+      display: flex;
+      flex-wrap: wrap;
       padding: 23px 0 6px 0px;
     }
   }
@@ -33,6 +35,8 @@
   }
 
   &__item-big {
+    grid-column-start: 1;
+    grid-column-end: 5;
     @media (max-width: 992px) {
       width: 1200px;
     }

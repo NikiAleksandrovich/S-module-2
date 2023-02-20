@@ -5,59 +5,99 @@
 
   &__wrapper {
     display: flex;
+    padding: 0 0 28px 0;
+    @media (max-width: 767px) {
+      padding: 26px 0px 23px 20px;
+      display: grid;
+    }
   }
 
   // .service__column
 
   &__column {
     flex: 1 1 0.33333333%;
-    padding: 59px 73px 48px 73px;
+    padding: 59px 50px 48px 50px;
     text-align: center;
     @media (max-width: 992px) {
       padding: 59px 31px 58px 36px;
     }
+    @media (max-width: 767px) {
+      padding: 0 31px 18px 36px;
+    }
+
+    @media (max-width: 550px) {
+      padding: 0 0 9px 0;
+    }
+  }
+  &__column:nth-child(2) {
+    @media (max-width: 550px) {
+      order: 2;
+      display: grid;
+    }
   }
 
   // .service__svg
-
   &__svg {
-    padding: 99px 0 45px 0;
+    padding: 100px 0 0 0;
+    @media (max-width: 550px) {
+      padding: 0;
+      margin: 0 10px 0 0;
+    }
   }
   &__svg-1 {
     background: url(/source/img/index-icon/icon-1.svg) top no-repeat;
-    height: 72px;
+
+    @media (max-width: 550px) {
+      background: url(/source/img/index-icon/mobile-icon-1.svg) no-repeat;
+    }
   }
 
   // .service__svg-2
 
   &__svg-2 {
     background: url(/source/img/index-icon/icon-2.svg) top no-repeat;
-    height: 69px;
+
+    @media (max-width: 550px) {
+      background: url(/source/img/index-icon/mobile-icon-3.svg) no-repeat;
+    }
   }
 
   // .service__svg-3
 
   &__svg-3 {
     background: url(/source/img/index-icon/icon-3.svg) top no-repeat;
-    height: 75px;
+
+    @media (max-width: 550px) {
+      background: url(/source/img/index-icon/mobile-icon-2.svg) no-repeat;
+    }
   }
 
   // .service__title
 
   &__title {
-    position: relative;
     font-size: 21px;
     font-weight: 700;
+    margin: 0 0 18px 0;
+    @media (max-width: 550px) {
+      font-size: 18px;
+      padding: 12px 0 16px 50px;
+      margin: 0;
+      text-align: left;
+    }
   }
 
   // .service__text
 
   &__text {
-    @media (max-width: 992px) {
+    @media (max-width: 550px) {
       br {
         display: none;
       }
       line-height: 23px;
+    }
+    @media (max-width: 550px) {
+      text-align: initial;
+      padding: 0px 20px 0 50px;
     }
   }
 }
