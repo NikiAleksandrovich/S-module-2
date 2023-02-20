@@ -688,7 +688,7 @@ img {
 .common-intro__wrapper {
   padding: 100px 0 120px 0;
   text-align: center;
-  background: url(/source/img/review-image/review-background/intro-triangle.svg.svg) bottom no-repeat, url(/source/img/review-image/review-background/back-desktop.jpg) 50% -54px no-repeat;
+  background: url(../..//source/img/review-image/review-background/intro-triangle.svg.svg) bottom no-repeat, url(../..//source/img/review-image/review-background/back-desktop.jpg) 50% -54px no-repeat;
 }
 @media (max-width: 992px) {
   .common-intro__wrapper {
