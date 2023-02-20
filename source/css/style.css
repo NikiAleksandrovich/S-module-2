@@ -410,27 +410,27 @@ img {
   }
 }
 .service__svg-1 {
-  background: url(/source/img/index-icon/icon-1.svg) top no-repeat;
+  background: url(../../source/img/index-icon/icon-1.svg) top no-repeat;
 }
 @media (max-width: 550px) {
   .service__svg-1 {
-    background: url(/source/img/index-icon/mobile-icon-1.svg) no-repeat;
+    background: url(../../source/img/index-icon/mobile-icon-1.svg) no-repeat;
   }
 }
 .service__svg-2 {
-  background: url(/source/img/index-icon/icon-2.svg) top no-repeat;
+  background: url(../../source/img/index-icon/icon-2.svg) top no-repeat;
 }
 @media (max-width: 550px) {
   .service__svg-2 {
-    background: url(/source/img/index-icon/mobile-icon-3.svg) no-repeat;
+    background: url(../../source/img/index-icon/mobile-icon-3.svg) no-repeat;
   }
 }
 .service__svg-3 {
-  background: url(/source/img/index-icon/icon-3.svg) top no-repeat;
+  background: url(../../source/img/index-icon/icon-3.svg) top no-repeat;
 }
 @media (max-width: 550px) {
   .service__svg-3 {
-    background: url(/source/img/index-icon/mobile-icon-2.svg) no-repeat;
+    background: url(../../source/img/index-icon/mobile-icon-2.svg) no-repeat;
   }
 }
 .service__title {
@@ -977,11 +977,11 @@ img {
   }
 }
 .contact-info__label--tel::after {
-  background-image: url(/source/img/review-image/review-ico/phone.svg);
+  background-image: url(../../source/img/review-image/review-ico/phone.svg);
   background-repeat: no-repeat;
 }
 .contact-info__label--email::after {
-  background-image: url(/source/img/review-image/review-ico/mail.svg);
+  background-image: url(../../source/img/review-image/review-ico/mail.svg);
   background-repeat: no-repeat;
 }
 .contact-info__input {
@@ -1093,7 +1093,7 @@ img {
   height: 16px;
   left: -53px;
   top: -1px;
-  background: url(/source/img/review-image/review-ico/tick.svg) no-repeat;
+  background: url(../../source/img/review-image/review-ico/tick.svg) no-repeat;
   cursor: pointer;
 }
 .sights__checkbox-icon:hover::before {
