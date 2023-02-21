@@ -11,9 +11,7 @@
     @media (max-width: 767px) {
       display: grid;
       justify-items: center;
-    }
-    @media (max-width: 767px) {
-      padding: 33px 18px 0px 8px;
+      padding: 38px 10px 0px 8px;
     }
   }
 
@@ -49,6 +47,7 @@
     }
     @media (max-width: 767px) {
       grid-gap: 6px;
+      margin: 34px 51px 40px 53px;
     }
   }
 
@@ -76,6 +75,9 @@
 }
 
 .developer {
+  @media (max-width: 767px) {
+    padding: 4px 37px 0 0px;
+  }
   // .developer__logo
 
   &__logo {
@@ -89,6 +91,9 @@
     margin: 0 0 0 7px;
     position: absolute;
     fill: $basic-black;
+    @media (max-width: 767px) {
+      margin: -4px 0px 0 12px;
+    }
   }
   &__logo--svg:hover {
     fill: $-basic-medium-cyan-blue;

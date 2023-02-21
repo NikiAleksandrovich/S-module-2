@@ -24,15 +24,38 @@
   &__column {
     flex: 1 1 0.33333%;
     text-align: center;
+    position: relative;
     @media (max-width: 992px) {
       padding: 0 40px 0 40px;
     }
-    @media (max-width: 550px) {
+    @media (max-width: 767px) {
       padding: 0px 23px 0 23px;
       br {
         display: none;
       }
     }
+    @media (max-width: 767px) {
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 1px;
+        width: 400px;
+        bottom: -23px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        background-color: #d6d6d6;
+      }
+    }
+    @media (max-width: 450px) {
+      &::after {
+        width: 280px;
+      }
+    }
+  }
+  &__column:last-child::after {
+    display: none;
   }
 
   // .benefits__title
