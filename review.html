@@ -16,19 +16,27 @@
 </head>
 
 <body class="page__body">
-  <div class="page__wrapper">
+  <div class="page__wrapper page__wrapper--opened">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <nav class="main-nav">
-          <div class="page-header__logo--wrapper">
-            <a href="index.html" class="page-header__logo">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="./source/img/index-logo/logotype-desktop.svg.svg">
-                <source media="(min-width: 768px)" srcset="./source/img/index-logo/mainlogo-tablet.svg">
-                <img src="./source/img/index-logo/logotyle-mobile.svg" alt="Логотип">
-              </picture>
-            </a>
-          </div>
+        <div class="page-header__logo--wrapper">
+          <a href="#" class="page-header__logo">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./source/img/index-logo/logotype-desktop.svg.svg">
+              <source media="(min-width: 768px)" srcset="./source/img/index-logo/mainlogo-tablet.svg">
+              <img src="./source/img/index-logo/logotyle-mobile.svg" alt="Логотип">
+            </picture>
+          </a>
+          <button class="page-header__toggle" type="button"><span class="visually-hidden">открыть меню</span></button>
+        </div>
+        <nav class="main-nav main-nav--opened">
+          <button class="main-nav__toggle" type="button"><svg width="23" height="22" viewBox="0 0 23 22" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M23 2.77477L20.0991 0L11.5 8.22522L2.9009 0L0 2.77477L8.5991 11L0 19.2252L2.9009 22L11.5 13.7748L20.0991 22L23 19.2252L14.4009 11L23 2.77477Z"
+                fill="white" />
+            </svg>
+            <span class="visually-hidden">закрыть меню</span></button>
           <ul class="main-nav__list main-nav__list--left">
             <li class="main-nav__item"><a href="./index.html">главная</a></li>
             <li class="main-nav__item"><a href="./catalog.html">фото и видео</a></li>

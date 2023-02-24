@@ -3,7 +3,7 @@
 
   &__wrapper {
     display: flex;
-    padding: 44px 0 55px 0;
+    padding: 41px 0 55px 0;
     background-color: $basic-very-light-gray;
     @media (max-width: 992px) {
       padding: 44px 0 36px 0;
@@ -14,7 +14,7 @@
       row-gap: 50px;
     }
     @media (max-width: 550px) {
-      row-gap: 46px;
+      row-gap: 47px;
       padding: 26px 0 22px 0;
     }
   }
