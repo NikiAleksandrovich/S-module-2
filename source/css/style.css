@@ -367,7 +367,6 @@ img {
 @media (max-width: 700px) {
   .page__wrapper--opened {
     padding-top: 223px;
-    padding-bottom: 223px;
   }
 }
 
