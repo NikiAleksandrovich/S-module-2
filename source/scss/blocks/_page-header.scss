@@ -102,9 +102,9 @@
       background: linear-gradient(180deg, rgba(0, 0, 0, 0) 84%, rgba(0, 0, 0, 0.2) 100%);
     }
   }
-  &__list li:hover {
+  &__list:hover .main-nav__item {
     @media (max-width: 700px) {
-      background-color: #090a0a;
+      background: #669ec0;
     }
   }
 

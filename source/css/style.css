@@ -266,8 +266,8 @@ img {
   }
 }
 @media (max-width: 700px) {
-  .main-nav__list li:hover {
-    background-color: #090a0a;
+  .main-nav__list:hover .main-nav__item {
+    background: #669ec0;
   }
 }
 .main-nav__list--left {
