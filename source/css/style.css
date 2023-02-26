@@ -939,6 +939,11 @@ img {
     padding: 96px 0 120px 0;
   }
 }
+@media (max-width: 700px) {
+  .common-intro__wrapper {
+    padding: 54px 0 67px 0;
+  }
+}
 .common-intro__column {
   padding: 113px 0 55px 0;
   text-align: center;
@@ -946,6 +951,11 @@ img {
 @media (max-width: 992px) {
   .common-intro__column {
     padding: 57px 0 55px 0;
+  }
+}
+@media (max-width: 700px) {
+  .common-intro__column {
+    padding: 35px 20px 27px 20px;
   }
 }
 .common-intro__column--catalog {
@@ -961,6 +971,21 @@ img {
   font-weight: 700;
   margin: 0 0 32px 0;
 }
+@media (max-width: 700px) {
+  .common-intro__title {
+    font-size: 18px;
+    margin: 0px 0 28px 0;
+  }
+}
+@media (max-width: 700px) {
+  .common-intro__text {
+    line-height: 24px;
+  }
+  .common-intro__text br {
+    display: none;
+  }
+}
+
 .review-form__wrapper {
   max-width: 1200px;
   padding: 0 120px;
