@@ -73,7 +73,6 @@
           <div class="review-form__wrapper">
             <h2 class="visually-hidden">Форма отзыва о посещение Седоны</h2>
             <form class="form" action="#" method="get">
-
               <div class="questionnaire-wrapper">
                 <fieldset class="questionnaire">
                   <legend class="questionnaire__title">ваше общее впечатление:</legend>
@@ -118,26 +117,31 @@
                     </div>
                   </div>
                 </fieldset>
+
+
+
+
+                <fieldset class="contact-info">
+                  <legend class="contact-info__title">Контактная информация:</legend>
+                  <div class="contact-info__list">
+                    <div class="contact-info__item contact-info__item--tel">
+                      <label class="contact-info__label contact-info__label--tel" for="contact-tel"><span
+                          class="contact-info__span">Контактный</span>
+                        Телефон*:</label>
+                      <input class="contact-info__input" type="tel" id="contact-tel" placeholder="Введите телефон"
+                        name="contacts" required>
+                    </div>
+                    <div class="contact-info__item">
+                      <label class="contact-info__label contact-info__label--email" for="contact-email">Электронная
+                        почта*:</label>
+                      <input class="contact-info__input" type="email" id="contact-email" placeholder="Введите e-mail"
+                        name="contacts" required>
+                    </div>
+                  </div>
+                </fieldset>
               </div>
 
-              <fieldset class="contact-info">
-                <legend class="contact-info__title">Контактная информация:</legend>
-                <div class="contact-info__list">
-                  <div class="contact-info__item contact-info__item--tel">
-                    <label class="contact-info__label contact-info__label--tel" for="contact-tel"><span
-                        class="contact-info__span">Контактный</span>
-                      Телефон*:</label>
-                    <input class="contact-info__input" type="tel" id="contact-tel" placeholder="Введите телефон"
-                      name="contacts" required>
-                  </div>
-                  <div class="contact-info__item">
-                    <label class="contact-info__label contact-info__label--email" for="contact-email">Электронная
-                      почта*:</label>
-                    <input class="contact-info__input" type="email" id="contact-email" placeholder="Введите e-mail"
-                      name="contacts" required>
-                  </div>
-                </div>
-              </fieldset>
+
 
               <fieldset class="sights">
                 <legend class="sights__title">посещенные <br> достопримечательности:</legend>

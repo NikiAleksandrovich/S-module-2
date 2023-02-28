@@ -1,5 +1,10 @@
 .feedback {
   padding: 0 0 52px 0;
+
+  @media (max-width: 767px) {
+    padding: 0px 0 47px 0;
+  }
+
   // .feedback__title
 
   &__title {
@@ -9,6 +14,10 @@
     color: $basic-black;
     position: relative;
     margin: 0 0 50px 0;
+    @media (max-width: 767px) {
+      font-size: 18px;
+      margin: 0px 0 9px 0;
+    }
   }
   &__title::before {
     content: "";
@@ -70,6 +79,9 @@
     @media (max-width: 992px) {
       padding: 0 0 61px 0;
     }
+    @media (max-width: 767px) {
+      padding: 0px 0 37px 0;
+    }
   }
 
   // .review-form__button
@@ -85,11 +97,17 @@
     @media (max-width: 992px) {
       padding: 19px 77px 14px 66px;
     }
+    @media (max-width: 767px) {
+      padding: 19px 53px 14px 44px;
+    }
   }
 
   // .review-form__text
 
   &__text {
     font-size: 14px;
+    @media (max-width: 767px) {
+      display: none;
+    }
   }
 }

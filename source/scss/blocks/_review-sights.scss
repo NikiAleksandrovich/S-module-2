@@ -1,5 +1,8 @@
 .sights {
   padding: 0 0 82px 0;
+  @media (max-width: 767px) {
+    padding: 0 0 59px 0;
+  }
   // .sights__title
 
   &__title {
@@ -9,6 +12,10 @@
     color: $basic-black;
     position: relative;
     margin: 0 0 61px 0;
+    @media (max-width: 767px) {
+      font-size: 18px;
+      margin: 0 0 37px 0;
+    }
   }
   &__title::before {
     content: "";
@@ -52,6 +59,12 @@
       row-gap: 62px;
       padding: 0 0 0 162px;
     }
+    @media (max-width: 767px) {
+      grid-template-columns: none;
+      padding: 0;
+      justify-content: center;
+      row-gap: 53px;
+    }
   }
 
   // .sights__item
@@ -79,6 +92,9 @@
     left: -69px;
     background-color: $basic-extra-light-gray;
     cursor: pointer;
+    @media (max-width: 767px) {
+      left: -79px;
+    }
   }
   &__checkbox:checked + &__label::after {
     content: "";
@@ -90,6 +106,10 @@
     top: -1px;
     background: url(../../source/img/review-image/review-ico/tick.svg) no-repeat;
     cursor: pointer;
+    @media (max-width: 767px) {
+      top: 3px;
+      left: -63px;
+    }
   }
   &__checkbox-icon:hover::before {
     background-color: #e5e5e5;

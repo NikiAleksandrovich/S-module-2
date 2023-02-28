@@ -9,37 +9,66 @@
     @media (max-width: 1200px) {
       padding: 0 60px;
     }
+    @media (max-width: 767px) {
+      padding: 0 20px;
+    }
   }
 }
 .questionnaire-wrapper {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding: 0px 0 69px 78px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  @media (max-width: 1000px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
   @media (max-width: 992px) {
     padding: 28px 0 69px 0;
+  }
+  @media (max-width: 767px) {
+    grid-template-columns: none;
+    justify-content: center;
+    text-align: center;
+    padding: 11px 0 0 0;
   }
 }
 .questionnaire {
   flex: 1 1 auto;
   position: relative;
+  padding: 0 0 82px 80px;
+  @media (max-width: 1000px) {
+    padding: 0 0 82px 0;
+  }
+  @media (max-width: 767px) {
+    display: grid;
+    order: 3;
+    padding: 0;
+    margin: 0 0 56px 0;
+  }
   &::after {
     content: "";
     width: 1px;
     height: 292px;
     top: -26px;
-    right: 43px;
+    right: -50px;
     position: absolute;
     background-color: #dbdbdb;
     @media (max-width: 992px) {
       right: 0px;
     }
+    @media (max-width: 767px) {
+      display: none;
+    }
   }
   // .questionnaire__title
 
   &__title {
-    flex: 1 1 auto;
     font-size: 21px;
     font-weight: 700;
+    @media (max-width: 550px) {
+      font-size: 18px;
+    }
   }
 
   // .questionnaire__list
@@ -49,6 +78,10 @@
     @media (max-width: 992px) {
       padding: 0px 0 0 71px;
     }
+    @media (max-width: 767px) {
+      margin: 37px 0 0 0;
+      padding: 0px 0 0 54px;
+    }
   }
 
   // .questionnaire__item
@@ -56,6 +89,10 @@
   &__item {
     margin: 0 0 51px 0;
     position: relative;
+
+    @media (max-width: 767px) {
+      margin: 0 0 42px 0;
+    }
   }
   &__item:last-child {
     margin: 0;
@@ -86,6 +123,9 @@
     background-color: #f2f2f2;
     position: absolute;
     cursor: pointer;
+    @media (max-width: 767px) {
+      left: -55px;
+    }
   }
   &__radio-button:hover {
     background-color: $basic-very-meium-light-gray;
@@ -103,6 +143,9 @@
     background-color: $basic-black;
     position: absolute;
     cursor: pointer;
+    @media (max-width: 767px) {
+      left: -37px;
+    }
   }
   &__radio:checked + &__label:active::after {
     background-color: #333333;
@@ -110,16 +153,27 @@
   }
 }
 .personality {
-  padding: 0 0 0 36px;
+  flex: 1 1 auto;
+  padding: 0px 0 0 128px;
   @media (max-width: 992px) {
     padding: 0 0 0 55px;
   }
+  @media (max-width: 767px) {
+    display: grid;
+    order: 1;
+    padding: 0;
+  }
+
   // .personality__list
 
   &__list {
     display: grid;
+    row-gap: 20px;
     max-width: 400px;
-    margin: 57px 0 0 0;
+    margin: 53px 0 0 0;
+    @media (max-width: 767px) {
+      margin: 19px 0px 45px 0px;
+    }
   }
 
   // .personality__item
@@ -127,7 +181,6 @@
   &__item {
     display: inline-flex;
     align-items: center;
-    margin: 0 0 20px 0;
   }
   &__item:last-child {
     margin: 0;
