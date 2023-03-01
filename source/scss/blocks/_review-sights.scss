@@ -30,6 +30,11 @@
       left: -184px;
       bottom: 25px;
     }
+    @media (max-width: 767px) {
+      width: 320px;
+      left: -43px;
+      top: -16px;
+    }
   }
   &__title::after {
     content: "";
@@ -42,6 +47,9 @@
     @media (max-width: 1040px) {
       width: 123px;
       bottom: 25px;
+    }
+    @media (max-width: 767px) {
+      display: none;
     }
   }
 

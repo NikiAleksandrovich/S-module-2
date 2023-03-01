@@ -32,6 +32,11 @@
       left: -184px;
       bottom: 15px;
     }
+    @media (max-width: 767px) {
+      width: 320px;
+      top: -21px;
+      left: -53px;
+    }
   }
   &__title::after {
     content: "";
@@ -44,6 +49,9 @@
     @media (max-width: 1040px) {
       width: 123px;
       bottom: 15px;
+    }
+    @media (max-width: 767px) {
+      display: none;
     }
   }
   // .feedback__text

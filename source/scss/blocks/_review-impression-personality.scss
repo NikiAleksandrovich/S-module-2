@@ -69,6 +69,17 @@
     @media (max-width: 550px) {
       font-size: 18px;
     }
+    &::before {
+      @media (max-width: 767px) {
+        content: "";
+        height: 1px;
+        width: 320px;
+        top: -21px;
+        left: 0;
+        background-color: #dbdbdb;
+        position: absolute;
+      }
+    }
   }
 
   // .questionnaire__list
@@ -155,6 +166,7 @@
 .personality {
   flex: 1 1 auto;
   padding: 0px 0 0 128px;
+  position: relative;
   @media (max-width: 992px) {
     padding: 0 0 0 55px;
   }
