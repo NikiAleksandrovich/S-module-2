@@ -143,6 +143,7 @@
   }
   &__radio-button:active {
     background-color: #d5d5d5;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
   &__radio:checked + &__label::after {
     content: "";

@@ -7,7 +7,7 @@
     background: url(../../source/img/review-image/review-background/intro-triangle.svg.svg) bottom no-repeat,
       url(../../source/img/review-image/review-background/back-desktop.jpg) 50% -54px no-repeat;
     @media (max-width: 992px) {
-      padding: 96px 0 120px 0;
+      padding: 96px 20px 120px 20px;
     }
     @media (max-width: 700px) {
       padding: 54px 0 67px 0;
@@ -35,7 +35,10 @@
   &__column--catalog {
     padding: 104px 0 55px 0;
     @media (max-width: 992px) {
-      padding: 54px 0 55px 0;
+      padding: 54px 20px 55px 20px;
+    }
+    @media (max-width: 767px) {
+      padding: 25px 20px 39px 20px;
     }
   }
 

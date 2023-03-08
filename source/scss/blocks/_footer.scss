@@ -83,6 +83,7 @@
   &__logo {
     color: $basic-black;
     position: relative;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
 
   // .developer__logo--svg
