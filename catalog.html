@@ -166,8 +166,13 @@
                   очередной раз!</div>
               </div>
               <div class="video-preview">
-                <div class="video-preview__img"><img src="./source/img/catalog-image/catalog-img/video-desktop.jpg"
-                    width="800" height="500" alt="#"></div>
+                <div class="video-preview__img">
+                  <picture>
+                    <source media="(min-width: 500px)"
+                      srcset="./source/img/catalog-image/catalog-img/video-desktop.jpg">
+                    <img src="./source/img/catalog-image/catalog-img/video-mobile.jpg" alt="logo">
+                  </picture>
+                </div>
                 <div class="video-preview__controls">
                   <span class="video-preview__replay" type="button"><svg width="16" height="20" viewBox="0 0 16 20"
                       fill="none" xmlns="http://www.w3.org/2000/svg">
