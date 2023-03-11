@@ -48,7 +48,7 @@
   max-width: 800px;
   margin: 0px auto;
   position: relative;
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     max-width: 320px;
   }
 
@@ -70,7 +70,7 @@
     display: flex;
     justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.6);
-    @media (max-width: 500px) {
+    @media (max-width: 600px) {
       padding: 22px 1px 11px 34px;
     }
   }
@@ -84,7 +84,7 @@
     position: absolute;
     bottom: 30px;
     padding: 0 41px 0 36px;
-    @media (max-width: 500px) {
+    @media (max-width: 600px) {
       height: 71px;
       bottom: -71px;
       align-items: center;
@@ -95,7 +95,7 @@
   &__button svg {
     fill: $basic-white;
     cursor: pointer;
-    @media (max-width: 500px) {
+    @media (max-width: 600px) {
       fill: #5c6870;
     }
   }
@@ -132,7 +132,10 @@
     @media (max-width: 992px) {
       width: 389px;
     }
-    @media (max-width: 500px) {
+    @media (max-width: 630px) {
+      width: 360px;
+    }
+    @media (max-width: 600px) {
       margin: 0px 0 0 8px;
       width: 235px;
     }
@@ -147,7 +150,7 @@
     border-radius: 50%;
     background-color: $basic-white;
     cursor: pointer;
-    @media (max-width: 500px) {
+    @media (max-width: 600px) {
       margin: -6px 0 0 44px;
     }
   }

@@ -1749,7 +1749,7 @@ img {
 }
 @media (max-width: 767px) {
   .catalog-page__wrapper {
-    padding: 0px;
+    padding: 0 10px;
   }
 }
 
@@ -2025,7 +2025,7 @@ img {
   margin: 0px auto;
   position: relative;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .video-preview {
     max-width: 320px;
   }
@@ -2043,7 +2043,7 @@ img {
           justify-content: space-between;
   background-color: rgba(0, 0, 0, 0.6);
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .video-preview__controls {
     padding: 22px 1px 11px 34px;
   }
@@ -2060,7 +2060,7 @@ img {
   bottom: 30px;
   padding: 0 41px 0 36px;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .video-preview__buttons {
     height: 71px;
     bottom: -71px;
@@ -2075,7 +2075,7 @@ img {
   fill: #ffffff;
   cursor: pointer;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .video-preview__button svg {
     fill: #5c6870;
   }
@@ -2107,7 +2107,12 @@ img {
     width: 389px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 630px) {
+  .video-preview__bar {
+    width: 360px;
+  }
+}
+@media (max-width: 600px) {
   .video-preview__bar {
     margin: 0px 0 0 8px;
     width: 235px;
@@ -2121,7 +2126,7 @@ img {
   background-color: #ffffff;
   cursor: pointer;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .video-preview__togle {
     margin: -6px 0 0 44px;
   }
